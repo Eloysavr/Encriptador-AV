@@ -1,0 +1,229 @@
+*{
+    background:#f9f9f7;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 130%;
+    font-size: 1.5em;
+}
+
+.logo{
+    position: absolute;
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 15%;   
+}
+
+main{
+    display: flex;
+    margin: 0 5%;
+    margin-top: 0;
+}
+
+.entrada{
+    margin: 3% 3% 0 3%;
+    width: 50%;
+}
+
+.texto-entrada{
+    resize: none;
+    background: none;
+    border: none;
+    margin-top: 1em;
+    text-transform: lowercase;
+    width: 100%;  
+}
+
+.texto-entrada:focus{
+    outline: none;
+}
+
+.aviso{
+    text-align: left;
+    color: #d1b3bc;
+    font-size: 0.8em;
+}
+
+.botones{
+    display: flex;
+    background: none;
+}
+
+.botones button{
+    padding: 0.5em 1em;
+    margin: 1em auto;
+    text-align: center;
+    border-radius: 24px;
+    border: 2px solid #d1b3bc;
+    font-size: 75%;
+    cursor: pointer;
+}
+
+.boton-encriptar{
+    color:#f9f9f7;
+    background: #d1b3bc;
+    width: 45%;
+}
+
+.boton-desencriptar{
+    color:#35272d;
+    background: #e7dae0;
+    width: 45%;
+}
+
+.boton-desencriptar:hover{
+    transition: 0.3s all;
+    color:#f9f9f7;
+    background: #d1b3bc; 
+    transform: scale(1.04);
+}
+
+.boton-encriptar:hover{
+    transition: 0.3s all;
+    transform: scale(1.04);
+}
+
+.boton-encriptar:active{
+    background: #8c7384;
+    border: #8c7384;
+}
+
+.boton-desencriptar:active{
+    background: #8c7384;
+    border: #8c7384;
+}
+
+.salida{
+    background: white;
+    border-radius: 24px;
+    box-shadow: 3px 3px 10px #e7dae0;
+    width: 35%;
+    margin: 2% 0 0 7%;
+}
+
+.text-i{
+    font-size: 75%; 
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    bottom: 5em;
+    background: none;
+    height: 0;
+    cursor: default;
+}
+
+.texto-salida{
+    resize: none;
+    border: none;
+    background: white;
+    border-radius: 24px;
+    padding: 7%;
+    background-image: url("img/buscar.png");
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position-x: center;
+    background-position-y: 2em;
+    font-size: 1.5em;
+    margin: 3%;
+    width: 80%;
+    cursor: default;
+}
+
+.texto-salida::placeholder{
+    font-size: 75%;
+    text-align: center;
+    color: #35272d;
+    font-weight: bold;
+    padding-top: 90%;
+}
+
+.texto-salida:focus{
+    outline: none;
+}
+
+.copiar{
+    color:#35272d;
+    background: #e7dae0;
+    position: relative;
+    width: 35%;
+    bottom: 1.5em;
+    visibility: hidden;
+}
+   
+.copiar:hover{
+    transition: 0.3s all;
+    color:#f9f9f7;
+    background: #d1b3bc; 
+    transform: scale(1.04);
+}    
+
+.copiar:active{
+    background: #8c7384;
+    border: #8c7384;
+}
+
+footer{
+    width: 65%;
+    margin: auto;
+    display: flex;
+}
+.text-fin{
+   margin: auto;
+   color: gray;  
+   font-family: 'Montserrat', sans-serif;
+   font-size: small;
+   text-align: left;
+}
+
+.enlaces{
+   display: inline;
+   text-align: center;
+}
+
+.enlaces img{
+    width: 20%;
+}
+
+.enlaces img:hover{
+    opacity: 70%;
+}
+
+@media screen and (max-width: 480px) {
+    main{
+        display: inline-block;
+    }
+    .logo{
+        position: static;
+        width: 50%;
+    }
+    .entrada, .salida, .copiar{
+        width: auto;
+        margin: 3%;
+    }
+    .botones{
+        font-size: 0.9em;
+    }
+    .texto-entrada, .texto-salida{
+        font-size: 1em;
+        line-height: normal;
+    }
+    .copiar{
+        top: 137%; 
+    }
+    .text-i{
+        margin: 7% 3% 0 3%;
+        line-height: normal;
+    }
+    .aviso, .text-i{
+        font-size: 0.6em;
+    }
+    footer{
+        display: block;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .enlaces img{
+       width: 2.5em;
+    }
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/iconoAndrea.png">
+    
+    </head>
+    <body>
+        <header>
+            <img src="img/LogoAndrea.png" alt="logo Andrea Velásquez" class="logo">
+        </header>
+        <main>
+            <section class="entrada">              
+                <textarea name="mensaje-ingresado" id="mensaje" cols="30" rows="10" placeholder="ingresa tu texto aquí..." autofocus class="texto-entrada" onkeyup="this.value=numText(this.value)"></textarea>
+                <div>      
+                    <h6 class="aviso">⚠ Solo letras minúsculas y sin acento</h6>
+                </div>    
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>     
+            </section>
+                
+            <section class="salida">       
+                <textarea name="resultado-mensaje" id="resultado" cols="20" rows="10" placeholder="Ningún mensage fue encontrado" class="texto-salida" readonly></textarea>
+                <p class="text-i">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="botones">
+                    <button onclick="copiar();" class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+        <footer>
+            <div class="enlaces">
+                <a href="https://github.com/Eloysavr"  target="_blank"><img src="img/icoGh.png" alt="icono Github"></a>
+                <a href="https://www.linkedin.com/in/eloysa-velasquez-6453a2168/" target="_blank"><img src="img/icoIn.png" alt="icono Linkeding"></a>
+                <a href="https://www.instagram.com/eloysavelasquez/" target="_blank"><img src="img/icoIg.png" alt="icono Instagram"></a>
+            </div> 
+            <hr> 
+            <p class="text-fin">Este proyecto es el resultado del primer Alura Challenge de la ruta de aprendizaje: Principiante en programación.</p>              
+        </footer>
+    </body>
+</html>    
