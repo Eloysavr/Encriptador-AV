@@ -225,5 +225,7 @@ footer{
     .enlaces img{
        width: 2.5em;
     }
+    .botones button:hover{
+        transform: none;
+    }
 }
-
